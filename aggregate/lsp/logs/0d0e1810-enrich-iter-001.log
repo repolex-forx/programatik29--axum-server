@@ -1,0 +1,21 @@
+[2026-11-22T14:59:26Z] === ENRICH ITERATION 1 START | repo=programatik29/axum-server sha=0d0e1810 ===
+[2026-11-22T14:59:26Z] [iter=1] PHASE START: enrich repo=programatik29/axum-server sha=0d0e1810 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0d0e1810-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0d0e181093d5683858a858921deffa0e739f61a0.nq.gz
+[2026-11-22T14:59:56Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T14:59:57Z] [iter=1] AST store loaded triples=119299 load_secs=1 mem_mb=257 MB
+[2026-11-22T14:59:57Z] [iter=1] Step 2: Finding LSP targets mem_mb=257 MB
+[2026-11-22T14:59:57Z] [iter=1] LSP targets found call_sites=1021 imports=74 extends=0 implements=83 secs=0
+[2026-11-22T14:59:58Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=257 MB
+[2026-11-22T14:59:58Z] [iter=1] Position index built positions=7928 nodes_with_types=10009 secs=0 mem_mb=257 MB
+[2026-11-22T14:59:58Z] [iter=1] Step 3: Starting LSP resolution mem_mb=257 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T14:59:58Z] [iter=1] Resolving target type target_type=call_site count=1021
+[2026-11-22T15:00:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/tls_rustls/mod.rs
+[2026-11-22T15:00:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=4 resolved=230 errors=0 current=src/notify_once.rs
+[2026-11-22T15:01:02Z] [iter=1] Target type resolved target_type=call_site resolved=456 errors=0 secs=64 mem_mb=257 MB
+[2026-11-22T15:01:02Z] [iter=1] Resolving target type target_type=import_statement count=74
+[2026-11-22T15:01:12Z] [iter=1] Target type resolved target_type=import_statement resolved=38 errors=0 secs=10 mem_mb=257 MB
+[2026-11-22T15:01:12Z] [iter=1] Resolving target type target_type=implements_clause count=83
+[2026-11-22T15:02:06Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=2.7 files_done=4 resolved=65 errors=0 current=src/tls_openssl/mod.rs
+[2026-11-22T15:02:07Z] [iter=1] Target type resolved target_type=implements_clause resolved=65 errors=0 secs=55 mem_mb=257 MB
+[2026-11-22T15:02:23Z] [iter=1] Step 5: Writing final enrichment file triples=7740
+[2026-11-22T15:02:23Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/0d0e181093d5683858a858921deffa0e739f61a0.nq.gz size_kb=140
+[2026-11-22T15:02:23Z] [iter=1] PHASE END: enrich elapsed_s=177 elapsed_min=2.9 total_triples=7740
