@@ -271,7 +271,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/axum-core-0.4.5/src/body.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/0d0e181093d5683858a858921deffa0e739f61a0/chunk-001.nq.gz",
+      "dep": "dep/0d0e181093d5683858a858921deffa0e739f61a0.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
